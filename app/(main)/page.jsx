@@ -15,6 +15,28 @@ export default function Home() {
           Quill Editor
         </Link>
 
+        <Link
+          href="/jodit"
+          className="px-6 py-3 text-lg font-semibold text-white bg-blue-500 rounded-lg hover:bg-blue-600 transition"
+        >
+          Jodit Editor
+        </Link>
+
+        <Link
+          href="/toast"
+          className="px-6 py-3 text-lg font-semibold text-white bg-blue-500 rounded-lg hover:bg-blue-600 transition"
+        >
+          Toast Editor
+        </Link>
+
+        <Link
+          href="/tiptop"
+          className="px-6 py-3 text-lg font-semibold text-white bg-blue-500 rounded-lg hover:bg-blue-600 transition"
+        >
+          Tiptop Editor
+        </Link>
+
+
         <div className="border-t border-gray-300 my-4"></div>
         <Link
           href="/draft"
