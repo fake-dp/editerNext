@@ -1,18 +1,23 @@
 "use client";
 
 import React, { useRef } from "react";
-import JoditEditor from "jodit-react";
+import dynamic from "next/dynamic";
+
+// JoditEditor를 동적 로딩하여 SSR 비활성화
+const JoditEditor = dynamic(() => import("jodit-react").then((mod) => mod.default), {
+  ssr: false, // SSR 비활성화
+});
 
 export default function JoditEditorComponent() {
   const editor = useRef(null);
   const [content, setContent] = React.useState("");
 
   const config = {
-    readonly: false, // 'true'는 읽기 전용 모드
+    readonly: false, // 읽기 전용 모드 비활성화
     height: 400,
-    toolbar: true,
+    toolbar: true, // 툴바 활성화
     uploader: {
-      insertImageAsBase64URI: true, // 이미지 업로드 설정
+      insertImageAsBase64URI: true, // 이미지 업로드를 Base64로 처리
     },
   };
 
@@ -26,7 +31,6 @@ export default function JoditEditorComponent() {
           config={config}
           tabIndex={1} // tabIndex 설정
           onBlur={(newContent) => setContent(newContent)} // 에디터 내용 저장
-          onChange={(newContent) => {}}
         />
       </div>
     </div>
