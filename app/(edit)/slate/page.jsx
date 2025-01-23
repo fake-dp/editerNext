@@ -54,7 +54,7 @@ export default function SlateEditor() {
         {/* 헤더 */}
         <div className="bg-indigo-500 text-white text-center py-4">
           <h1 className="text-2xl font-bold">Slate Editor</h1>
-          <p className="text-sm mt-1">Rich Text Editor with Toolbar</p>
+          <p className="text-sm mt-1">찾아 볼게 너무 많음 별로인거같음</p>
         </div>
 
         {/* 툴바 */}

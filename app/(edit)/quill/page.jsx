@@ -43,8 +43,8 @@ export default function QuillEditor() {
       <div className="w-full max-w-3xl bg-white shadow-md rounded-lg overflow-hidden">
         {/* 헤더 */}
         <div className="bg-blue-500 text-white text-center py-4">
-          <h1 className="text-2xl font-bold">Text Editor</h1>
-          <p className="text-sm mt-1">Write and format your content below</p>
+          <h1 className="text-2xl font-bold">Quill Editor</h1>
+          <p className="text-sm mt-1">무난함 많이 사용함</p>
         </div>
 
         {/* 에디터 */}
@@ -62,7 +62,7 @@ export default function QuillEditor() {
         {/* 출력 */}
         <div className="bg-gray-50 p-6 border-t">
           <h2 className="text-xl font-semibold text-gray-700 mb-4">
-            Editor Output:
+            출력 결과:
           </h2>
           <div
             className="prose max-w-none text-gray-700"
